@@ -1,0 +1,4 @@
+{
+    "apiUrl": "Url del servidor api",
+    "socketUrl": "Url del socket"
+}
