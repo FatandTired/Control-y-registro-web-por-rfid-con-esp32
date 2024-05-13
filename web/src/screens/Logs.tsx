@@ -1,10 +1,10 @@
-import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TablePagination from "@mui/material/TablePagination";
 import TableContainer from "@mui/material/TableContainer";
+import RemoveIcon from '@mui/icons-material/Remove';
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
+import AddIcon from '@mui/icons-material/Add';
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
@@ -64,7 +64,7 @@ export default function Logs() {
           createData(
             log.name,
             log.code,
-            log.action === "entry" ? <FontAwesomeIcon icon={faRightFromBracket} color="green" flip="both" /> : <FontAwesomeIcon icon={faRightFromBracket} color="red"/>,
+            log.action === "entry" ? <AddIcon color="success"/> : <RemoveIcon color="error"/>,
             log.date
           )
         )
