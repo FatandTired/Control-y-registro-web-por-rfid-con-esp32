@@ -96,7 +96,7 @@ export default function Logs() {
   return (
     <div className="App">
       <Paper sx={{ width: "100%", overflow: "hidden" }}>
-        <TableContainer sx={{ maxHeight: 10*50 }}>
+        <TableContainer sx={{ minHeight: 10*50, maxHeight: 10*50 }}>
           <Table stickyHeader aria-label="sticky table">
             <TableHead>
               <TableRow>
