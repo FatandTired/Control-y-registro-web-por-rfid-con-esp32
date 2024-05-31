@@ -15,7 +15,7 @@ export async function createRecord(req: any, res: any) {
         code: codeName.code,
         name: codeName.name,
         action: model ? (model.action == "entry" ? "left" : "entry") : "entry",
-        date: new Date().toLocaleString(),
+        date: new Date().toLocaleString("es-ES", {timeZone: "America/Bogota"}),
       });
       if (result) {
         socket.emit("Record_Added");
