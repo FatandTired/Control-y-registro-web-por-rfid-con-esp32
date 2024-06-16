@@ -12,7 +12,7 @@ Sistema basado en el uso del microcontrolador ESP32 y el sensor RFID RC522 para 
 
 **Para el servidor express:** Renombrar el archivo [/server/.env.example](https://github.com/FatandTired/Control-y-registro-web-por-rfid-con-esp32/blob/master/server/.env.example)  a .env y definir la url de conexión a la base de datos mongodb
 
-```json
+```
 MONGO_URL="Url de conexión a mongodb"
 ```
 **Para la página en react:** Renombrar el archivo [/web/src/example-config.json](https://github.com/FatandTired/Control-y-registro-web-por-rfid-con-esp32/blob/master/web/src/example-config.json) a config.json y definir las url del servidor express y el socket
@@ -26,7 +26,7 @@ MONGO_URL="Url de conexión a mongodb"
 
 **Para el circuito:** Realizar todas las conexiones mostradas en [/sistema/physical_circuit.jpg](https://github.com/FatandTired/Control-y-registro-web-por-rfid-con-esp32/blob/master/sistema/physical_circuit.jpg) y  cargar el archivo [rfidaccesscontrol.ino](https://github.com/FatandTired/Control-y-registro-web-por-rfid-con-esp32/blob/master/sistema/rfidaccesscontrol.ino) con las variables ssid, wifi y apiUrl definidas.
 
-```json
+```
 #define ssid "Nombre de la red Wifi"
 #define password "Contraseña de la red Wifi"
 #define apiUrl "Url del servidor express"
